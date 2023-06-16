@@ -9,9 +9,10 @@ import Typography from '@mui/material/Typography';
 
 interface Pokemon {
     name: string;
+    image: string;
 }
 
-export default function PokemonCard({name}: Pokemon) {
+export default function PokemonCard({name, image}: Pokemon) {
 
    
 
@@ -19,8 +20,8 @@ export default function PokemonCard({name}: Pokemon) {
   return (
     <Card sx={{ maxWidth: 345, marginTop:18 }}>
       <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        sx={{ height: 280 }}
+        image={image}
         title="green iguana"
       />
       <CardContent>
